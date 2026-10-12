@@ -1,15 +1,15 @@
 ﻿<div align="center">
 
 <h3><code>Om_Chaitanya_Sharma@github ~ $ ./contributions.sh --live</code></h3>
-<img src="./contrib-heatmap.svg?refresh=1" width="860" />
+<img src="./contrib-heatmap.svg?refresh=2" width="820" />
 
 <br><br>
 
 <h3><code>Om_Chaitanya_Sharma@github ~ $ whoami</code></h3>
 <table border="0">
   <tr>
-    <td valign="top" width="425"><img src="./om-ascii.svg?refresh=1" width="425" /></td>
-    <td valign="top" width="425"><img src="./stats-card.svg?refresh=1" width="425" /></td>
+    <td valign="top" width="400"><img src="./om-ascii.svg?refresh=2" width="400" /></td>
+    <td valign="top" width="400"><img src="./stats-card.svg?refresh=2" width="400" /></td>
   </tr>
 </table>
 
