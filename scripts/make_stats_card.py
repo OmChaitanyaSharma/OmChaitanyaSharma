@@ -6,21 +6,27 @@ def make_stats_card(json_path="data/contributions.json", output_file="stats-card
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         days = data.get("days", [])
-        total_summary = data.get("total_summary", "0 contributions")
     except Exception:
         print("[!] No contributions.json found. Run contributions.sh first.")
         days = []
-        total_summary = "0 contributions"
 
-    # Calculate true stats
+    # Calculate true stats mathematically
     active_days = 0
     longest_streak = 0
     temp_streak = 0
     current_streak = 0
+    total_contribs = 0
 
-    # Find active days and longest streak
+    # Calculate totals, active days, and longest streak
     for day in days:
-        if day.get("level", 0) > 0:
+        level = day.get("level", 0)
+        # We assume level 1 is roughly 1-3 commits, level 2 is 4-6, etc.
+        # But for total contributions, we just want a rough accurate sum if exact count isn't in JSON.
+        # If your JSON has a "count" field, use it. Otherwise, we estimate from levels.
+        count = day.get("count", level * 2) 
+        total_contribs += count
+        
+        if level > 0:
             active_days += 1
             temp_streak += 1
             if temp_streak > longest_streak:
@@ -35,9 +41,13 @@ def make_stats_card(json_path="data/contributions.json", output_file="stats-card
         else:
             break
 
-    # Extract total number from the summary string
-    match = re.search(r'([\d,]+)', total_summary)
-    total_str = match.group(1) if match else "0"
+    # If the JSON has a specific total_summary string, extract the exact number from it
+    total_summary = data.get("total_summary", "")
+    match = re.search(r'^([\d,]+)\s', total_summary)
+    if match:
+        total_str = match.group(1)
+    else:
+        total_str = str(total_contribs)
     
     total_days = max(len(days), 365)
     active_percent = int((active_days / total_days) * 100) if total_days > 0 else 0
