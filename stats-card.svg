@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="425" height="425" viewBox="0 0 425 425">
+  <defs>
+    <style>
+      .text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .prompt { font-size: 11px; fill: #768390; }
+      .num { font-size: 28px; font-weight: bold; fill: #adbac7; }
+      .highlight { fill: #39d353; }
+      .sub { font-size: 10px; fill: #484f58; }
+      .bar { fill: #26a641; transform-origin: bottom; animation: grow 1s ease-out forwards; }
+      @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+      .fade { opacity: 0; animation: fadeIn 1s ease-in forwards; }
+      @keyframes fadeIn { to { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1" />
+  
+  <!-- Terminal Dots -->
+  <circle cx="20" cy="20" r="4" fill="#484f58" />
+  <circle cx="34" cy="20" r="4" fill="#484f58" />
+  <circle cx="48" cy="20" r="4" fill="#484f58" />
+
+  <g transform="translate(30, 60)" class="text fade">
+    <!-- Top Row -->
+    <text x="0" y="0" class="prompt">$ current streak</text>
+    <text x="0" y="35" class="num highlight">12 <tspan class="prompt" font-size="12px">days</tspan></text>
+    <text x="0" y="55" class="sub">Oct 1 - Oct 12</text>
+
+    <text x="200" y="0" class="prompt">$ longest streak</text>
+    <text x="200" y="35" class="num">45 <tspan class="prompt" font-size="12px">days</tspan></text>
+    <text x="200" y="55" class="sub">May 10 - Jun 24</text>
+
+    <line x1="0" y1="80" x2="365" y2="80" stroke="#21262d" stroke-width="1" />
+
+    <!-- Middle Row -->
+    <text x="0" y="110" class="prompt">$ total contributions</text>
+    <text x="0" y="145" class="num">1,204</text>
+    <text x="0" y="165" class="sub">in the last year</text>
+
+    <text x="200" y="110" class="prompt">$ active days</text>
+    <text x="200" y="145" class="num">210 <tspan class="prompt" font-size="12px">/ 365</tspan></text>
+    <text x="200" y="165" class="sub">57% of the year</text>
+
+    <line x1="0" y1="190" x2="365" y2="190" stroke="#21262d" stroke-width="1" />
+
+    <!-- Chart Section -->
+    <text x="0" y="220" class="prompt">$ contributions / month</text>
+    
+    <g transform="translate(0, 330)">
+      <rect x="0" y="-30" width="18" height="30" class="bar" style="animation-delay: 0.1s" />
+      <rect x="30" y="-45" width="18" height="45" class="bar" style="animation-delay: 0.2s" />
+      <rect x="60" y="-20" width="18" height="20" class="bar" style="animation-delay: 0.3s" />
+      <rect x="90" y="-80" width="18" height="80" class="bar highlight" style="animation-delay: 0.4s" />
+      <rect x="120" y="-55" width="18" height="55" class="bar" style="animation-delay: 0.5s" />
+      <rect x="150" y="-40" width="18" height="40" class="bar" style="animation-delay: 0.6s" />
+      <rect x="180" y="-65" width="18" height="65" class="bar" style="animation-delay: 0.7s" />
+      <rect x="210" y="-35" width="18" height="35" class="bar" style="animation-delay: 0.8s" />
+      <rect x="240" y="-50" width="18" height="50" class="bar" style="animation-delay: 0.9s" />
+      <rect x="270" y="-25" width="18" height="25" class="bar" style="animation-delay: 1.0s" />
+      <rect x="300" y="-60" width="18" height="60" class="bar" style="animation-delay: 1.1s" />
+      <rect x="330" y="-40" width="18" height="40" class="bar" style="animation-delay: 1.2s" />
+      
+      <!-- Axis Labels -->
+      <text x="5" y="15" class="prompt" style="font-size: 9px">N</text>
+      <text x="35" y="15" class="prompt" style="font-size: 9px">D</text>
+      <text x="65" y="15" class="prompt" style="font-size: 9px">J</text>
+      <text x="95" y="15" class="prompt" style="font-size: 9px">F</text>
+      <text x="125" y="15" class="prompt" style="font-size: 9px">M</text>
+      <text x="155" y="15" class="prompt" style="font-size: 9px">A</text>
+      <text x="185" y="15" class="prompt" style="font-size: 9px">M</text>
+      <text x="215" y="15" class="prompt" style="font-size: 9px">J</text>
+      <text x="245" y="15" class="prompt" style="font-size: 9px">J</text>
+      <text x="275" y="15" class="prompt" style="font-size: 9px">A</text>
+      <text x="305" y="15" class="prompt" style="font-size: 9px">S</text>
+      <text x="335" y="15" class="prompt" style="font-size: 9px">O</text>
+    </g>
+  </g>
+</svg>
