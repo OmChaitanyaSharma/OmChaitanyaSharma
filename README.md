@@ -1,16 +1,16 @@
-## Hi there 👋
+﻿<div align="center">
 
-<!--
-**OmChaitanyaSharma/OmChaitanyaSharma** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h3><code>Om_Chaitanya_Sharma@github ~ $ ./contributions.sh</code></h3>
+<img src="./contrib-heatmap.svg" width="860" />
 
-Here are some ideas to get you started:
+<br><br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<h3><code>Om_Chaitanya_Sharma@github ~ $ whoami</code></h3>
+<table border="0">
+  <tr>
+    <td valign="top" width="370"><img src="./om-ascii.svg" width="370" /></td>
+    <td valign="top" width="490"><img src="./info-card.svg" width="490" /></td>
+  </tr>
+</table>
+
+</div>
