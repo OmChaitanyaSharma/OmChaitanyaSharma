@@ -1,10 +1,15 @@
 ﻿<div align="center">
 
+<h3><code>Om_Chaitanya_Sharma@github ~ $ ./contributions.sh --live</code></h3>
+<img src="./contrib-heatmap.svg" width="860" />
+
+<br><br>
+
 <h3><code>Om_Chaitanya_Sharma@github ~ $ whoami</code></h3>
 <table border="0">
   <tr>
-    <td valign="top" width="370"><img src="./om-ascii.svg" width="370" /></td>
-    <td valign="top" width="490"><img src="./info-card.svg" width="490" /></td>
+    <td valign="top" width="425"><img src="./om-ascii.svg" width="425" /></td>
+    <td valign="top" width="425"><img src="./stats-card.svg" width="425" /></td>
   </tr>
 </table>
 
@@ -17,10 +22,5 @@
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" />
   </a>
 </p>
-
-<br>
-
-<h3><code>Om_Chaitanya_Sharma@github ~ $ ./contributions.sh --live</code></h3>
-<img src="./contrib-heatmap.svg" width="860" />
 
 </div>
