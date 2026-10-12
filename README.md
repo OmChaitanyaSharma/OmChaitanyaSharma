@@ -8,6 +8,16 @@
   </tr>
 </table>
 
+<p align="center">
+  <a href="https://linkedin.com/in/omchaitanyasharma" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/omchaitanyasharma" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" />
+  </a>
+</p>
+
 <br>
 
 <h3><code>Om_Chaitanya_Sharma@github ~ $ ./contributions.sh --live</code></h3>
